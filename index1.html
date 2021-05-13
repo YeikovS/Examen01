@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/grid/modernizr-custom (1).js"></script>
+    <title>Ejercicio1</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #container{
+            display: grid;
+            width: 85%;
+            height: 700px;
+            grid-template-areas:"header header2"
+                                    "aside section";
+            grid-template-columns: 0.7fr 3fr;
+            grid-template-rows: 10% 100% 10% 60% 10% 10%;
+            margin: 0 auto;
+        }
+        .header{
+            grid-area: header;
+            color: white;
+            background-color: black;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #text1{
+            font-size: 25px;
+            text-align: left;
+            margin-left: 30px;
+            margin-top: 20px;
+        }
+        .header2{
+            grid-area: header2;
+            color: white;
+            background-color: grey;
+            display: flex;
+            flex-direction: row-reverse;
+        }
+        .image1{
+            text-align: right;
+            margin-right: 30px;
+            margin-top: 25px;
+        }
+        .image2{
+            text-align: right;
+            margin-right: 30px;
+            margin-top: 25px;
+        }
+        .image3{
+            text-align: right;
+            margin-right: 30px;
+            margin-top: 25px;
+        }
+        .image4{
+            text-align: right;
+            margin-right: 30px;
+            margin-top: 25px;
+        }
+        .aside{
+            grid-area: aside;
+            background-color: chocolate;
+            color: white;
+            font-size: 15px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+        }
+        .elementosdeaside{
+            margin-top: 30px;
+            margin-left: 30px;
+        }
+        .taskpanel{
+            margin-top: 10px;
+        }
+        .responsive{
+            margin-top: 10px;
+        }
+        .ui{
+            margin-top: 10px;
+        }
+        .form{
+            margin-top: 10px;
+        }
+        .empty{
+            margin-top: 10px;
+        }
+        .section{
+            grid-area: section;
+            background-color: white;
+            color: black;
+            font-size: 15px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        #section2{
+            width: 85%;
+            height: 50px;
+            margin: 0 auto;
+        }
+        .headeras{
+            width: 100%;
+            height: 100%;
+            border-style: groove;
+        }
+        #section3{
+            display: grid;
+            width: 85%;
+            height: 50px;
+            grid-template-areas:"sectionas1 sectionas2 sectionas3 sectionas4";
+            grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+            grid-gap: 10px;
+            grid-template-rows: 100%;
+            margin: 0 auto;
+            margin-top: 10px;
+            text-align: center;
+        }
+        .sectionas1{
+            grid-area: sectionas1;
+            border-style: groove;
+        }
+        .sectionas2{
+            grid-area: sectionas2;
+            border-style: groove;
+        }
+        .sectionas3{
+            grid-area: sectionas3;
+            border-style: groove;
+        }
+        .sectionas4{
+            grid-area: sectionas4;
+            border-style: groove;
+        }
+        #section4{
+            display: grid;
+            width: 85%;
+            height: 250px;
+            grid-template-areas:"sectiones1 sectiones2";
+            grid-template-columns: 1fr 2fr;
+            grid-gap: 10px;
+            grid-template-rows: 100%;
+            margin: 0 auto;
+            margin-top: 10px;
+        }
+        .sectiones1{
+            grid-area: sectiones1;
+            border-style: groove;
+        }
+        .sectiones2{
+            grid-area: sectiones2;
+            border-style: groove;
+        }
+        #section5{
+            display: grid;
+            width: 85%;
+            height: 250px;
+            grid-template-areas:"sectionis1 sectionis2";
+            grid-template-columns: 2fr 1fr;
+            grid-gap: 10px;
+            grid-template-rows: 100%;
+            margin: 0 auto;
+            margin-top: 10px;
+        }
+        .sectionis1{
+            grid-area: sectionis1;
+            border-style: groove;
+        }
+        .sectionis2{
+            grid-area: sectionis2;
+            border-style: groove;
+        }
+        footer{
+            margin-left: 100px;
+            margin-top: 15px;
+        }
+        @media (max-width: 1050px){
+            .header{
+                color: white;
+                background-color: black;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            #text1{
+            font-size: 12px;
+            text-align: left;
+            margin-left: 30px;
+            margin-top: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="header">
+            <div id="text1"><i class="fa fa-cog" aria-hidden="true"></i> Sistemas</div>
+        </div>
+        <div class="header2">
+            <div class="image1"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+            <div class="image2"><i class="fa fa-bars" aria-hidden="true"></i></div>
+            <div class="image3"><i class="fa fa-bell" aria-hidden="true"></i></div>
+            <div class="image4"><i class="fa fa-user" aria-hidden="true"></i></div>
+        </div>
+        <div class="aside">
+            <div class="elementosdeaside">
+                <div class="dash"><i class="fa fa-eye" aria-hidden="true"></i> Dashboard</div>
+                <div class="ui"><i class="fa fa-desktop" aria-hidden="true"></i> UI Elements</div>
+                <div class="taskpanel"><i class="fa fa-server" aria-hidden="true"></i> Task Panel</div>
+                <div class="responsive"><i class="fa fa-folder-open" aria-hidden="true"></i> Responsive Files</div>
+                <div class="form"><i class="fa fa-pie-chart" aria-hidden="true"></i> Forms</div>
+                <div class="empty"><i class="fa fa-flag-o" aria-hidden="true"></i> Empty Page</div>
+            </div>
+        </div>
+        <div class="section">Dashboard
+            <div id="section2">
+                <div class="headeras"></div>
+            </div>
+            <div id="section3">
+                <div class="sectionas1">Visitas Diarias</div>
+                <div class="sectionas2">Ventas</div>
+                <div class="sectionas3">Comentarios</div>
+                <div class="sectionas4">Visitas</div>
+            </div>
+            <div id="section4">
+                <div class="sectiones1"></div>
+                <div class="sectiones2"></div>
+            </div>
+            <div id="section5">
+                <div class="sectionis1"></div>
+                <div class="sectionis2"></div>
+            </div>
+            <footer>© 2021 Ingeniería de Sistemas, Hecho por Jacob Chávez</footer>
+        </div>
+    </div>
+</body>
+</html>

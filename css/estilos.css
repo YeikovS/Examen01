@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+#containerfull{
+    display: grid;
+    width: 85%;
+    height: 700px;
+    grid-template-areas:"header header2"
+                        "aside section";
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 10% 100% 10% 60% 10% 10%;
+    margin: 0 auto;
+}
+.header{
+    grid-area: header;
+    color: white;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#text1{
+    font-size: 25px;
+    text-align: left;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.header2{
+    grid-area: header2;
+    color: white;
+    background-color: grey;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.aside{
+    grid-area: aside;
+    background-color: rgb(170, 170, 170);
+    color: white;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+.section{
+    grid-area: section;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.containermin{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 0 auto;
+    color: white;
+}
+.containermax{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 0 auto;
+    color: white;
+}
+.caja{
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+.min{
+    max-width: 400px;
+
+}
+.max{
+    max-width: 500px;
+}
+.boton{
+    border: none;
+    border-radius: 5px;
+    height: 35px;
+    background-color: rgb(36, 166, 199);
+    color: white;
+}
+#table{
+    color: black;
+}
+th{
+    border: 1px solid white;
+    background-color: rgb(36, 166, 199);
+    padding: 5px;
+}
+a{
+    text-decoration: none;
+}
+.icono1{
+    font-size: 14px;
+    color: red;
+    text-align: left;
+}
+.icono2{
+    font-size: 14px;
+    color: green;
+    text-align: right;
+}

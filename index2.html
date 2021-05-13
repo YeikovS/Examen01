@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio2</title>
+    <link rel="stylesheet" href="/css/estilos.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div id="containerfull">
+        <div class="header">
+            <div id="text1"><i class="fa fa-cog" aria-hidden="true"></i> Sistemas</div>
+        </div>
+        <div class="header2">
+        </div>
+        <div class="aside">
+            <div class="elementosdeaside">
+                <div class="containermin">
+                    <input type="text" class="caja" id="nombre" placeholder="Titulo">
+                    <input type="email" class="caja" id="correo" placeholder="Descripcion">
+                    <button class="boton" onclick="registrar()">Registrar</button>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="containermax">
+                <table id="table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Titulo</th>
+                            <th>Descripción</th>
+                            <th colspan="2">Acción</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbd"></tbody>
+        
+                </table>
+            </div>
+        </div>
+        <footer>© 2021 Ingeniería de Sistemas, Hecho por Jacob Chávez</footer>
+    <script src="JS/scriptdel2.js"></script>
+</body>
+</html>
